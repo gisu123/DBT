@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: movie_data
+    database: DBT_DB       # where your raw table really is
+    schema: raw        # change this to correct schema
+
+    tables:
+      - name: raw_views
+      - name: raw_movies
+      - name: raw_users
